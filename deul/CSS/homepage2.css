@@ -1,0 +1,342 @@
+﻿/* General Styles 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center; /* Center-align content by default */
+}
+*/
+/* Header 
+header {
+    background-color: #005500;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+    nav ul li {
+        display: inline-block;
+        margin-left: 25px;
+    }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+            nav ul li a:hover {
+                background-color: #339933;
+                border-radius: 5px;
+                color: white;
+            }*/
+/* Carousel */
+/* Social Links in Footer */
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+}
+
+    .social-links li {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    .social-links a {
+        color: white;
+        font-size: 24px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .social-links a:hover {
+            color: #ff6600;
+        }
+
+/* Carousel */
+.carousel-item {
+    height: 400px; /* Height of carousel */
+    width: 100%; /* Full width of carousel */
+    display: flex; /* Flexbox for centering content */
+    align-items: center; /* Center vertically */
+}
+
+    .carousel-item img {
+        width: 100%; /* Full width of carousel item */
+        height: 100%; /* Full height of carousel item */
+        object-fit: cover; /* Cover the area while maintaining aspect ratio */
+    }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+
+/* About Section */
+.about {
+    background-color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+    .about h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: #004d00;
+    }
+
+    .about p {
+        font-size: 18px;
+        color: #555;
+    }
+
+    .about a.btn {
+        background-color: #004d00;
+        color: white;
+        padding: 12px 25px;
+        font-size: 16px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+        .about a.btn:hover {
+            background-color: #339933;
+        }
+
+/* Services Section */
+.services {
+    background-color: #e6f7e6;
+    padding: 50px 0;
+    text-align: center;
+}
+
+    .services h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+        color: #004d00;
+    }
+
+    .services .service-item {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    .services i {
+        font-size: 36px;
+        margin-bottom: 10px;
+        color: #004d00;
+    }
+
+/* Events Section */
+.events {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+    text-align: center;
+}
+
+    .events h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+        color: #ff6600;
+    }
+
+    .events .event-item {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    .events i {
+        font-size: 36px;
+        margin-bottom: 10px;
+        color: #ff6600;
+    }
+
+/* Live Darshan Section */
+.live-darshan {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+    .live-darshan h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: #004d00;
+    }
+
+    .live-darshan .video-responsive {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+    }
+
+    .live-darshan iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #e6f7e6;
+    padding: 50px 0;
+    text-align: center;
+}
+
+    .testimonials h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        color: #004d00;
+    }
+
+    .testimonials .carousel-item {
+        font-size: 18px;
+        color: #555;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+/* Gallery Section */
+.gallery {
+    background-color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+    .gallery h2 {
+        font-size: 32px;
+        margin-bottom: 30px;
+        color: #004d00;
+    }
+
+/* Make gallery images uniform in size */
+.gallery-thumbnail {
+    width: 100%;
+    height: 250px; /* Fixed height for thumbnails */
+    object-fit: cover; /* Ensures images maintain aspect ratio and cover the space without distortion */
+    border-radius: 8px; /* Optional: Rounded corners for the images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+    /* Hover effect */
+    .gallery-thumbnail:hover {
+        transform: scale(1.05);
+    }
+
+/* Donation Section */
+.donations {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+    .donations h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+        color: #004d00;
+    }
+
+    .donations a.btn {
+        background-color: #ff6600;
+        color: white;
+        padding: 12px 25px;
+        font-size: 16px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+        .donations a.btn:hover {
+            background-color: #ff8533;
+        }
+
+/* Map Section */
+.map {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+}
+
+    .map h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        color: #004d00;
+    }
+
+#map-container {
+    height: 400px;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: #004d00;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+}
+
+    footer p {
+        margin: 0;
+    }
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+}
+
+    .social-links li {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    .social-links a {
+        color: white;
+        font-size: 24px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .social-links a:hover {
+            color: #ff6600;
+        }

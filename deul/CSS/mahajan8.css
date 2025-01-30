@@ -1,0 +1,168 @@
+﻿/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    font-family: 'Times New Roman', serif;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%; /* Ensure html and body take full height */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Flexbox container to handle the footer positioning */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes up at least 100% of viewport height */
+}
+
+/* Main content area */
+.main-content {
+    flex: 1; /* This ensures the content area grows and takes up the remaining space */
+    overflow-y: auto; /* Allows vertical scrolling if the content overflows */
+}
+
+/* Image Styles */
+img {
+    border: 10px solid transparent;
+    height: 100px;
+    border-radius: 50px;
+    margin: 0 10px;
+}
+
+/* Search Input */
+input[type=search] {
+    width: 100%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Custom Branding */
+.custombrand {
+    font-weight: 800;
+    font-size: 100px;
+}
+
+/* Navbar Customization */
+.navbar-custom {
+    background-color: midnightblue;
+}
+
+    /* Change all navbar text to white */
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-text,
+    .navbar-custom .nav-link,
+    .navbar-custom .offcanvas-title,
+    .navbar-custom .dropdown-item {
+        color: white !important;
+    }
+
+/* Ensure active links have no underline and are white */
+.nav-link.active {
+    color: white !important;
+    text-decoration: none;
+}
+
+/* Navbar Toggler - Change icon and button to white */
+.custom-toggler .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba(255, 255, 255, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+.custom-toggler .navbar-toggler {
+    background-color: white; /* White button background */
+    border-color: white !important; /* White button border */
+}
+
+/* Close button inside offcanvas (X icon) */
+.btn-close {
+    color: white;
+}
+
+/* Offcanvas header background and text color */
+.offcanvas-header {
+    background-color: royalblue;
+    color: white !important;
+}
+
+/* Offcanvas body background color */
+.offcanvas-body {
+    background-color: midnightblue;
+}
+
+/* Custom text color */
+.custom {
+    color: white;
+}
+
+/* Hide certain nav items */
+.nav-item .hideit {
+    display: none;
+}
+
+/* Footer */
+footer {
+    background-color: midnightblue;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    width: 100%;
+    margin-top: auto; /* Ensures the footer sticks to the bottom when there's less content */
+}
+
+    /* Footer text */
+    footer p {
+        margin: 0;
+    }
+
+/* Social Links in Footer */
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+}
+
+    .social-links li {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    .social-links a {
+        color: white;
+        font-size: 24px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .social-links a:hover {
+            color: #ff6600;
+        }
+
+/* Carousel */
+.carousel-item {
+    height: 400px; /* Height of carousel */
+    width: 100%; /* Full width of carousel */
+    display: flex; /* Flexbox for centering content */
+    align-items: center; /* Center vertically */
+}
+
+    .carousel-item img {
+        width: 100%; /* Full width of carousel item */
+        height: 100%; /* Full height of carousel item */
+        object-fit: cover; /* Cover the area while maintaining aspect ratio */
+    }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}

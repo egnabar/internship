@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="deul.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Shree Mangesh Prasanna</title>
+    <link href="css/master1.css" rel="stylesheet" />
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <p class="logos" > 
+                <img class="logo" src="images/lordmangesh1.jpg" />
+                <br />
+                ||Shree Mangesh Prasanna||
+            </p>
+            <div class="menuToggle"></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="parent"><a href="#">Bookings  <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="child">
+                            <li><a href="#">seva booking </a></li>
+                            <li><a href="#">room booking </a></li>
+                            <li><a href="#">kaul booking </a></li>
+                            <li><a href="#">hall booking </a></li>
+                        </ul>
+                    </li>
+                    <li class="parent"><a href="#">Updates  <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="child">
+                            <li><a href="#">notices </a></li>
+                            <li><a href="#">apeals </a></li>
+                            <li><a href="#">varshik calender </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Events</a></li>
+                    <li class="parent"><a href="#">About Us  <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="child">
+                            <li><a href="#">devasthan information </a></li>
+                            <li><a href="#">devasthan history </a></li>
+                            <li><a href="#">gsb history </a></li>
+                            <li><a href="#">management committee </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <script>
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'F11') {
+                event.preventDefault(); // Prevent the default action (fullscreen toggle)
+                window.location.href = 'login.aspx'; // Redirect to the new page
+            }
+        });
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+        menuToggle.onclick = function () {
+            header.classList.toggle('active');
+        }
+        let parent = document.querySelectorAll('.parent');
+        let child = document.querySelectorAll('.child');
+        parent[0].onclick = function () {
+            child[0].classList.toggle('active');
+        }
+        parent[1].onclick = function () {
+            child[1].classList.toggle('active');
+        }
+        parent[2].onclick = function () {
+            child[2].classList.toggle('active');
+        }
+
+    </script>
+</body>
+</html>
+

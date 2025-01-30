@@ -1,0 +1,71 @@
+﻿body {
+    background: url('https://example.com/background-image-url'); /* Replace with a valid image URL */
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Times New Roman', serif;
+}
+
+img {
+    border: 10px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 0 10px 0 10px;
+}
+
+input[type=search] {
+    width: 100%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.custombrand {
+    font-weight: 800;
+    font-size: 100px;
+}
+
+.navbar-custom {
+    background-color: midnightblue;
+}
+
+    /* Change all navbar text to white */
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-text,
+    .navbar-custom .nav-link,
+    .navbar-custom .offcanvas-title,
+    .navbar-custom .dropdown-item {
+        color: white !important;
+    }
+
+/* Change underline for active links to white */
+.nav-link.active {
+    color: white !important;
+    //text-decoration: underline;
+    text-decoration-color: white !important;
+}
+
+/* Change navbar toggler color */
+.custom-toggler.navbar-toggler {
+    border-color: darkcyan;
+}
+
+/* Change custom text to white */
+.custom {
+    color: white;
+}
+
+.nav-item .hideit {
+    display: none;
+}
+
+.offcanvas-header{
+    background-color:royalblue;
+    color: white !important;
+}
+
+.offcanvas-body {
+    background-color: royalblue;
+}

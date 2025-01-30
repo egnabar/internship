@@ -1,0 +1,78 @@
+﻿body {
+    background: url('https://example.com/background-image-url'); /* Replace with a valid image URL */
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Times New Roman', serif;
+}
+
+img {
+    border: 10px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 0 10px 0 10px;
+}
+
+input[type=search] {
+    width: 100%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.custombrand {
+    font-weight: 800;
+    font-size: 100px;
+}
+
+.navbar-custom {
+    background-color: midnightblue;
+}
+
+    /* Change all navbar text to white */
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-text,
+    .navbar-custom .nav-link,
+    .navbar-custom .offcanvas-title,
+    .navbar-custom .dropdown-item {
+        color: white !important;
+    }
+
+/* Ensure active links have no underline and are white */
+.nav-link.active {
+    color: white !important;
+    text-decoration: none; /* Removed underline */
+}
+
+/* Change navbar toggler icon to white */
+.custom-toggler .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba(255, 255, 255, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+/* Change navbar toggler button to white */
+.custom-toggler .navbar-toggler {
+    background-color: white; /* White button background */
+    border-color: white; /* White button border */
+}
+
+/* Change custom class text to white */
+.custom {
+    color: white;
+}
+
+.nav-item .hideit {
+    display: none;
+}
+
+/* Offcanvas header background and text color */
+.offcanvas-header {
+    background-color: midnightblue;
+    color: white !important;
+}
+
+/* Offcanvas body background color */
+.offcanvas-body {
+    background-color: midnightblue;
+}

@@ -1,0 +1,328 @@
+﻿
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    align-content:center;
+    width:100vw;
+}
+
+div {
+    text-align: center;
+}
+.containerbox {
+    width: 100%;
+    position: absolute;
+    top: 120px;
+    margin: 0;
+    padding: 0;
+}
+/* Carousel */
+.carousel-item {
+    height: 400px; /* Height of carousel */
+    width: 100%; /* Full width of carousel */
+    display: flex; /* Flexbox for centering content */
+    align-items: center; /* Center vertically */
+}
+
+    .carousel-item img {
+        width: 100%; /* Full width of carousel item */
+        height: 100%; /* Full height of carousel item */
+        object-fit: cover; /* Cover the area while maintaining aspect ratio */
+    }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+/* Social Links */
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+    text-align: center; /* Center align the social links */
+}
+
+    .social-links li {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    .social-links a {
+        color: white;
+        font-size: 24px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .social-links a:hover {
+            color: #ff6600;
+        }
+
+
+
+/* About Section */
+.about {
+    background-color: white;
+    padding: 60px 0;
+    text-align: center; /* Center all content inside the about section */
+}
+
+    .about h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: #004d00;
+    }
+
+    .about p {
+        font-size: 18px;
+        color: #555;
+    }
+
+    .about a.btn {
+        background-color: #004d00;
+        color: white;
+        padding: 12px 25px;
+        font-size: 16px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+        .about a.btn:hover {
+            background-color: #339933;
+        }
+
+/* Services Section */
+.services {
+    background-color: #e6f7e6;
+    padding: 50px 0;
+    text-align: center; /* Center all content inside the services section */
+}
+
+    .services h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+        color: #004d00;
+    }
+
+    .services .service-item {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        font-size: 18px;
+        text-align: center; /* Center align service items */
+    }
+
+    .services i {
+        font-size: 36px;
+        margin-bottom: 10px;
+        color: #004d00;
+    }
+
+/* Events Section */
+.events {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+    text-align: center; /* Center all content inside the events section */
+}
+
+    .events h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+        color: #ff6600;
+    }
+
+    .events .event-item {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        font-size: 18px;
+        text-align: center; /* Center align event items */
+    }
+
+    .events i {
+        font-size: 36px;
+        margin-bottom: 10px;
+        color: #ff6600;
+    }
+
+/* Live Darshan Section */
+.live-darshan {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center; /* Center all content inside the live darshan section */
+}
+
+    .live-darshan h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: #004d00;
+    }
+
+    .live-darshan .video-responsive {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+    }
+
+    .live-darshan iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #e6f7e6;
+    padding: 50px 0;
+    text-align: center; /* Center all content inside the testimonials section */
+}
+
+    .testimonials h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        color: #004d00;
+    }
+
+    .testimonials .carousel-item {
+        font-size: 18px;
+        color: #555;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center; /* Center testimonial text */
+    }
+
+/* Gallery Section */
+.gallery {
+    background-color: white;
+    padding: 60px 0;
+    text-align: center; /* Center all content inside the gallery section */
+}
+
+    .gallery h2 {
+        font-size: 32px;
+        margin-bottom: 30px;
+        color: #004d00;
+    }
+
+    .gallery .gallery-thumbnail {
+        margin: 0 auto;
+        display: block; /* Center each gallery image */
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+.gallery-thumbnail:hover {
+    transform: scale(1.05);
+}
+
+/* Donation Section */
+.donations {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center; /* Center all content inside the donations section */
+}
+
+    .donations h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+        color: #004d00;
+    }
+
+    .donations a.btn {
+        background-color: #ff6600;
+        color: white;
+        padding: 12px 25px;
+        font-size: 16px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        display: inline-block; /* Center the donation button */
+    }
+
+        .donations a.btn:hover {
+            background-color: #ff8533;
+        }
+
+/* Map Section */
+.map {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+    text-align: center; /* Center all content inside the map section */
+}
+
+    .map h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        color: #004d00;
+    }
+
+#map-container {
+    height: 400px;
+    width: 100%;
+    margin: 0 auto; /* Center the map container */
+}
+
+
+.social-links {
+    text-align: center;
+}
+
+
+/* Footer */
+footer {
+    background-color: midnightblue;
+    color: white;
+    text-align: center;
+    //position:relative;
+    padding: 25px 0;
+    width: 100%;
+    margin-top: auto; /* Ensures footer sticks to the bottom */
+}
+
+    /* Footer text */
+    footer p {
+        margin: 0;
+    }
+
+/* Social Links in Footer */
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+}
+
+    .social-links li {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    .social-links a {
+        color: white;
+        font-size: 24px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .social-links a:hover {
+            color: #ff6600;
+        }
+

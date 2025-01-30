@@ -1,0 +1,15 @@
+﻿body {
+    background:url(https://www.google.com/imgres?imgurl=https%3A%2F%2Fcloudinary-marketing-res.cloudinary.com%2Fimages%2Fw_1000%2Cc_scale%2Fv1708450498%2Fcss_background_image_1%2Fcss_background_image_1-png%3F_i%3DAA&tbnid=v0f73FSpd95m7M&vet=12ahUKEwjBit6EnOOHAxVW2zgGHcdTA7AQMygBegQIARBr..i&imgrefurl=https%3A%2F%2Fcloudinary.com%2Fguides%2Ffront-end-development%2Fcss-background-image-quick-tutorial-and-3-automation-tips&docid=8cnnG_G7efmfkM&w=1000&h=637&q=background%20image%20css&ved=2ahUKEwjBit6EnOOHAxVW2zgGHcdTA7AQMygBegQIARBr);
+    background-blend-mode:multiply;
+    background-position:center;
+    background-size: cover;
+    background-repeat:no-repeat;
+
+}
+.navbar-custom {
+    background-color: lightgreen;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: green;
+}
